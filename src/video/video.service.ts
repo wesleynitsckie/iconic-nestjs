@@ -30,7 +30,7 @@ export class VideoService {
         try{
             const spin = createSpinner();
             spin.start(`[x] Pulling a list of ${numProducts} products `);
-            //const files = await new Promise((done) => setTimeout(() => done(['fileA', 'fileB']), 1000));
+            
             // Get the Vidoe Data from afar
             const products = await this.getProducts(numProducts);
             spin.succeed("[x] Got some product...")
